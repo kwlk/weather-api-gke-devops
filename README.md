@@ -19,5 +19,5 @@ Projekt demonstruje pełny pipeline DevOps na Google Cloud Platform (GCP) z wyko
 1. Sklonuj repozytorium:
 
 ```bash
-git clone https://github.com/joannawalach1/weather-api-gke-cicd.git
-cd weather-api-gke-cicd
+git clone https://github.com/joannawalach1/weather-api-gke-devops.git
+
