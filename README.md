@@ -45,3 +45,15 @@ Projekt demonstruje pełny pipeline DevOps na Google Cloud Platform (GCP) z wyko
    ```bash
    git clone https://github.com/joannawalach1/weather-api-gke-cicd.git
    cd weather-api-gke-cicd
+   
+2. Zbuduj aplikację i uruchom lokalnie:
+
+mvn clean package
+java -jar target/*.jar
+
+
+3. Aplikacja będzie dostępna pod adresem: http://localhost:8081/api/weather
+
+Budowa i uruchomienie kontenera lokalnie
+docker build -t weather-api .
+docker run -p 8081:8081 weather-api
