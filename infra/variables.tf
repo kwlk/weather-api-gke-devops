@@ -28,12 +28,6 @@ variable "github_owner" {
   default     = "joannawalach1"
 }
 
-variable "github_connection" {
-  description = "Connection"
-  type        = string
-  default     = "us-central1-connection"
-}
-
 variable "github_repo" {
   description = "GitHub repository name"
   type        = string
@@ -68,4 +62,10 @@ variable "artifact_repo_name" {
   description = "Artifact Registry repository ID"
   type        = string
   default     = "weather-repo"
+}
+
+variable "terraform_state_bucket_name" {
+  description = "Bucket name to store tfstate"
+  type = string
+  default = "levelup-state-bucket"
 }
