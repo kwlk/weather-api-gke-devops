@@ -11,6 +11,23 @@ resource "google_container_cluster" "primary" {
   initial_node_count       = 1
 
   ip_allocation_policy {}
+
+  monitoring_config {
+      enable_components = [
+        "SYSTEM_COMPONENTS",
+        "APISERVER",
+        "SCHEDULER",
+        "CONTROLLER_MANAGER",
+        "POD"
+      ]
+    }
+
+    logging_config {
+      enable_components = [
+        "SYSTEM_COMPONENTS",
+        "APISERVER"
+      ]
+    }
 }
 
 # Node pool
